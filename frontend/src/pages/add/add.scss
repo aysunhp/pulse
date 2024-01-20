@@ -1,0 +1,49 @@
+@import "./../../assets/style/varibles/varibles.scss";
+@import "./../../assets/style/mixins/mixin.scss";
+
+
+
+.add{
+    width: 100%;
+    min-height: 100vh;
+   background-color: lightblue;
+
+    .containerr{
+        width: 70%;
+        padding: 140px 0px;
+        .add-heading{
+            @include display-flex(center,center);
+            flex-direction: column;
+            margin-bottom: 50px;
+            .svg-wrapper{
+                margin-bottom: 20px;
+            }
+            .heading{
+                width: 70%;
+                @include display-flex(center,center);
+                gap:0px;
+                .line{
+                    width: 30%;
+                    height: 2px;
+                    background-color: $primary-color;
+                  
+                }
+                h1{
+font-size: 60px;
+color: black;
+                }
+            }
+        }
+
+.form{
+  @include display-flex(center, center)
+
+}
+       
+
+    }
+
+    .table{
+        width: 90%;
+    }
+}

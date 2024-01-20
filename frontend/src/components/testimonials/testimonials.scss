@@ -1,0 +1,67 @@
+@import "./../../assets/style/varibles/varibles.scss";
+@import "./../../assets/style/mixins/mixin.scss";
+
+
+
+.testimonials{
+    width: 100%;
+    min-height: 50vh;
+    background-image: url("https://preview.colorlib.com/theme/pulse/img/review-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .containerr{
+        padding: 120px 30px;
+
+width: 70%;
+.testimonial-heading{
+    @include display-flex(center,center);
+    flex-direction: column;
+    margin-bottom: 50px;
+    .svg-wrapper{
+        margin-bottom: 20px;
+    }
+    .heading{
+        width: 70%;
+        @include display-flex(center,center);
+        gap:0px;
+        .line{
+            width: 30%;
+            height: 2px;
+            background-color: $primary-color;
+          
+        }
+        h1{
+font-size: 60px;
+color: $basic-color;
+        }
+    }
+}
+
+.content{
+    width: 60%;
+    @include display-flex(center,center);
+    gap:30px;
+    flex-direction: column;
+font-family: "Helvetica";
+    span{
+        color:$basic-color;
+        font-size: 40px;
+    }
+
+    p{
+    font-size: 16px;
+    color:$basic-color;
+    line-height: 2;
+    }
+
+   #ted{
+    color:$primary-color;
+    font-size:16px;
+    span{
+        color:$basic-color;
+        font-size:16px;
+    }
+   }
+}
+    }
+}

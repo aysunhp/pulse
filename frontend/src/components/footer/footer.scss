@@ -1,0 +1,21 @@
+@import "./../../assets/style/varibles/varibles.scss";
+@import "./../../assets/style/mixins/mixin.scss";
+
+
+
+footer{
+    width: 100%;
+    min-height:40vh ;
+background-image: url("https://preview.colorlib.com/theme/pulse/img/footer-bg.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+.containerr{
+width: 70%;
+@include display-flex(flex-end, center);
+p{
+ 
+    color:gray;
+  margin-top:340px ;
+}
+}
+}

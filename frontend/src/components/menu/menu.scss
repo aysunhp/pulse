@@ -1,0 +1,90 @@
+@import "./../../assets/style/varibles/varibles.scss";
+@import "./../../assets/style/mixins/mixin.scss";
+
+
+
+.menu{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("https://preview.colorlib.com/theme/pulse/img/menu-bg.jpg");
+    background-size: cover;
+
+    .container{
+        width: 70%;
+        padding: 100px 0px;
+        .menu-heading{
+            @include display-flex(center,center);
+            flex-direction: column;
+            margin-bottom: 50px;
+            .svg-wrapper{
+                margin-bottom: 20px;
+            }
+            .heading{
+                width: 70%;
+                @include display-flex(center,center);
+                gap:0px;
+                .line{
+                    width: 30%;
+                    height: 2px;
+                    background-color: $primary-color;
+                  
+                }
+                h1{
+font-size: 60px;
+color: $basic-color;
+                }
+            }
+        }
+
+        .menu-type{
+            margin-bottom: 60px;
+            padding:0px 200px ;
+            ul{
+                @include display-flex(center,center);
+                flex-wrap: wrap;
+              
+                li{
+                    font-size: 17px;
+                    color: $basic-color;
+                    &:hover{
+color:$primary-color;
+                    }
+                }
+            }
+        }
+
+        .box{
+        display: flex;
+        justify-content:left;
+
+            text-align: left;
+            flex-direction: column;
+            text-align: center;
+            .box-heading{
+                font-size: 18px;
+                color: white;
+                font-weight: 800;
+                text-align: left;
+                margin: 0px;
+                margin-bottom: 20px;
+            }
+            .box-content{
+              @include display-flex(left,center);
+              margin: 0px;
+               p{
+                color:$text-color;
+                line-height: 1.8;
+                font-size: 16px;
+                font-weight: normal;
+                margin: 0px;
+               }
+               h3{
+                color:$basic-color;
+                margin: 0px;
+                margin-right: 20px;
+               }
+            }
+        }
+
+    }
+}
